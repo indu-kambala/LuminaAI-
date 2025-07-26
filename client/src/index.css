@@ -1,18 +1,55 @@
+/* Import Google Font: Outfit */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-@import "tailwindcss";
 
-*{
+/* Import Tailwind CSS utilities */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Global styles */
+body {
   font-family: "Outfit", sans-serif;
+  /* Set a consistent dark background for the entire application */
+  background-color: #111827; /* Tailwind's gray-900 equivalent */
+  color: #F9FAFB; /* Tailwind's gray-50 equivalent for default text color */
 }
 
-@theme{
-  --color-primary: #5044E5;
+/* Custom Tailwind theme variables (adjusting primary color) */
+@theme {
+  --color-primary: #2563EB; /* Tailwind's blue-600, a strong, consistent blue */
 }
 
-.reset-tw, .reset-tw *{
+/* Reset for Markdown content to ensure basic styling is reverted */
+/* Added text color to ensure readability within Markdown blocks on dark backgrounds */
+.reset-tw, .reset-tw * {
   all: revert !important;
+  /* Ensure text color is readable within markdown blocks */
+  color: #D1D5DB; /* Tailwind's gray-300 for readability */
+  line-height: 1.6; /* Improved line height for readability */
 }
 
-.cl-drawerRoot{
+/* Clerk Drawer Root z-index (important for overlays) */
+.cl-drawerRoot {
   z-index: 10;
+}
+
+/* Custom scrollbar styling for a sleeker look on dark theme */
+/* Applies to elements with overflow-y-scroll or overflow-x-scroll */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the vertical scrollbar */
+  height: 8px; /* Height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #1F2937; /* Darker track color (gray-800) */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4B5563; /* Darker thumb color (gray-600) */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6B7280; /* Lighter thumb on hover (gray-500) */
 }
