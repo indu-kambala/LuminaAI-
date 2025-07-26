@@ -1,30 +1,34 @@
 /* Import Google Font: Outfit */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
-/* Import Tailwind CSS utilities */
+/* CORRECTED Tailwind CSS imports for deployment */
+/* Change these lines: */
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+/* To this: */
+@import "tailwindcss"; /* This single import typically handles base, components, and utilities */
 
 /* Global styles */
 body {
   font-family: "Outfit", sans-serif;
   /* Set a consistent dark background for the entire application */
   background-color: #111827; /* Tailwind's gray-900 equivalent */
-  color: #F9FAFB; /* Tailwind's gray-50 equivalent for default text color */
+  color: #f9fafb; /* Tailwind's gray-50 equivalent for default text color */
 }
 
 /* Custom Tailwind theme variables (adjusting primary color) */
 @theme {
-  --color-primary: #2563EB; /* Tailwind's blue-600, a strong, consistent blue */
+  --color-primary: #2563eb; /* Tailwind's blue-600, a strong, consistent blue */
 }
 
 /* Reset for Markdown content to ensure basic styling is reverted */
 /* Added text color to ensure readability within Markdown blocks on dark backgrounds */
-.reset-tw, .reset-tw * {
+.reset-tw,
+.reset-tw * {
   all: revert !important;
   /* Ensure text color is readable within markdown blocks */
-  color: #D1D5DB; /* Tailwind's gray-300 for readability */
+  color: #d1d5db; /* Tailwind's gray-300 for readability */
   line-height: 1.6; /* Improved line height for readability */
 }
 
@@ -41,15 +45,15 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1F2937; /* Darker track color (gray-800) */
+  background: #1f2937; /* Darker track color (gray-800) */
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4B5563; /* Darker thumb color (gray-600) */
+  background: #4b5563; /* Darker thumb color (gray-600) */
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #6B7280; /* Lighter thumb on hover (gray-500) */
+  background: #6b7280; /* Lighter thumb on hover (gray-500) */
 }
