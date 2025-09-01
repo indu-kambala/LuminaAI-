@@ -1,4 +1,5 @@
-# QuickAi-App-Fullstack
+# LuminaAI
+
 
 
 
