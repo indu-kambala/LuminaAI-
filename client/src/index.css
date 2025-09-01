@@ -3,9 +3,9 @@
 
 /* CORRECTED Tailwind CSS imports for deployment */
 /* Change these lines: */
-@import "tailwindcss/base";
+/* @import "tailwindcss/base";
 @import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import "tailwindcss/utilities"; */
 /* To this: */
 @import "tailwindcss"; /* This single import typically handles base, components, and utilities */
 
