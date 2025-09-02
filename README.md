@@ -1,4 +1,5 @@
-# LuminaAI
+# QUICK
+AI
 Lumina AI is a full-stack SaaS application that integrates multiple AI services into one platform. It enables users to generate written content, create and edit images, analyze resumes, and participate in a community — all from a centralized dashboard. With a simple pricing model of only $1/month for premium features, Lumina AI is designed to be affordable, scalable, and accessible.
 
 Built with a modern technology stack, it delivers a fast, secure, and seamless user experience. The platform is designed for creators, professionals, and teams who want to enhance productivity through AI-powered tools. Lumina AI simplifies complex tasks into intuitive workflows, making advanced AI accessible to everyone..
